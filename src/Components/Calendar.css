@@ -1,0 +1,12 @@
+.date {
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.date span {
+    margin: 10px 5px;
+}
