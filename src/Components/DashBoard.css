@@ -1,7 +1,7 @@
 .DashBoard {
     display: flex;
     justify-content: center;
-    /* margin: 50px; */
+    align-items: center;
 }
 
 .d-flex {

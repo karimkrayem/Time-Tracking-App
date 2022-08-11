@@ -2,14 +2,20 @@ import React, { useState } from 'react'
 import './Calendar.css'
 
 const Calendar = (props) => {
-    const [currentDate, setCurrentDate] = useState('')
+    const [title, setTitle] = useState('Daily');
+
+    const clickHandler = (e) => {
+        setTitle(e.target.innerHTML)
+        console.log(e.target.innerHTML)
+        props.onChangeHandler(e.target.innerHTML)
+    };
 
 
     return (
         <div className='date'>
-            <span>Daily</span>
-            <span>Weekly</span>
-            <span>Monthly</span>
+            <span value="daily" className='day' onClick={clickHandler} >Daily</span>
+            <span value="weekly" className='day' onClick={clickHandler}>Weekly</span>
+            <span value="monthly" className='day' onClick={clickHandler} >Monthly</span>
         </div>
     )
 
