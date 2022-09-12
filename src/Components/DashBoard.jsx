@@ -14,10 +14,7 @@ const DashBoard = (props) => {
     }
     return (
         <div className='DashBoard'>
-
-
             <User onTest={addChangeDate} />
-
             <div className='d-flex'>
                 {data.map((item) => {
                     console.log(setCurrData)
@@ -31,18 +28,11 @@ const DashBoard = (props) => {
                         return <Cards date={"test"} time="Last month" title={item.title} hours={item.timeframes.monthly.current} prevhours={item.timeframes.monthly.previous} />
                     }
                     return <Cards title={item.title} time="Last day" hours={item.timeframes.daily.current} prevhours={item.timeframes.daily.previous} />
-
                 })
 
                 }
             </div>
-
-
-
-
         </div>)
-
-
 }
 
 export default DashBoard

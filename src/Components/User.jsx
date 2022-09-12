@@ -6,9 +6,7 @@ const User = (props) => {
     const changeDate = (enteredDate) => {
         const datechanger = enteredDate
         props.onTest(datechanger)
-
     }
-
     return (
         <div className="user">
             <div className='user-info'>
@@ -20,7 +18,6 @@ const User = (props) => {
 
         </div>
     )
-
 }
 
 export default User
